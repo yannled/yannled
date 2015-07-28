@@ -1,7 +1,7 @@
-<hr class="featurette-divider">
+<hr class="featurette-divider" id="about">
 
         <!-- Fourth Featurette About-->
-        <div class="featurette" id="about" ng-controller="AboutCtrl">
+        <div class="featurette"  ng-controller="AboutController">
             <div class="col-lg-12">
                 <center>         
                     <h2 class="featurette-heading">About<br>
@@ -9,38 +9,13 @@
                     <br>
                     </center>                              
             </div>
-            <!--<div class="col-md-offset-2 col-lg-8" ng-repeat="step in steps">{{$index + 1}}       
+            <div class="col-md-offset-2 col-lg-8" ng-repeat="step in steps"> 
                 <div class="row"></div>
-                <img class="featurette-image img-circle img-responsive pull-right" src="step.imgSrc" ng-if="$index%2==0">
-                <img class="featurette-image img-circle img-responsive pull-left" src="step.imgSrc" ng-if="$index%2=/=0">
+                <img class="featurette-image img-circle img-responsive pull-right" src={{step.imgSrc}} ng-if="$index%2 == 0">
+                <img class="featurette-image img-circle img-responsive pull-left" src={{step.imgSrc}} ng-if="$index%2 != 0">
                  <h3>{{step.firstTitle}}
                     <span class="text-muted">{{step.secondTitle}}</span>
                 </h3>
-                <p>{{step.content}}</p>                             
-           </div>-->
-            <div class="col-md-offset-2 col-lg-8">       
-                <div class="row"></div>
-                <img class="featurette-image img-circle img-responsive pull-right" src="http://placehold.it/200x200">
-                 <h3>The Third Heading
-                    <span class="text-muted">Will Seal the Deal.</span>
-                </h3>
-                <p>Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula 
-                    porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-                
-                <div class="row"></div>
-                <img class="featurette-image img-circle img-responsive pull-left" src="http://placehold.it/200x200">
-                 <h3>The Third Heading
-                    <span class="text-muted">Will Seal the Deal.</span>
-                </h3>
-                <p>Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula 
-                    porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-                 
-                 <div class="row"></div>
-                <img class="featurette-image img-circle img-responsive pull-right" src="http://placehold.it/200x200">
-                 <h3>The Third Heading
-                    <span class="text-muted">Will Seal the Deal.</span>
-                </h3>
-                <p>Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula 
-                    porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+                <p>{{step.content}}</p><a href={{step.link}}>{{step.linkName}}</a>                              
            </div>
       </div>
