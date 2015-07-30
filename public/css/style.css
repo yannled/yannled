@@ -37,7 +37,7 @@ body {
 }
 
 .featurette-divider {
-    margin: 80px 0;
+    margin: 80px 0;  
 }
 
 .featurette {
@@ -177,3 +177,38 @@ footer {
         margin-left: 0;
     }
 }
+
+.portfolio-button {
+  opacity: 1;
+}
+ 
+.portfolio-button:hover {
+  opacity: 0.75;
+}
+#about-background{
+    background-color: beige;
+    background-clip: content-box;
+    background-origin: border-box  
+}
+#services{
+    background-color: beige;
+    background-clip: content-box;
+    background-origin: border-box  
+ }
+#contact{
+    background-color: beige;
+    background-clip: content-box;
+    background-origin: border-box  
+}
+#portfolio{
+    background-color: beige;
+    background-clip: content-box;
+    background-origin: border-box  
+}
+
+/*hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 0px solid #eee;
+}*/
