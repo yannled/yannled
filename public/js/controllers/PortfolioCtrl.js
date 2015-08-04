@@ -1,3 +1,7 @@
 angular.module('PortfolioCtrl', []).controller('PortfolioController', function($scope) {
-	$scope.tagline = 'Will Knock Your Socks Off';	
+	$scope.steps =
+    [ { imgSrc:'http://placehold.it/300x300',link:'#', },
+      { imgSrc:'http://placehold.it/300x300',link:'#',},
+	  { imgSrc:'http://placehold.it/300x300',link:'#', },
+	];
 });

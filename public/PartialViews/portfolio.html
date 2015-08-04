@@ -1,8 +1,8 @@
-<div id="about-background">
+<div id="portfolio-background">
 <hr class="featurette-divider" id="portfolio">
     <div class="container">
         <!-- Third Featurette PortFolio-->
-        <div class="featurette" ng-controller="PortfolioController">
+        <div class="featurette margin" ng-controller="PortfolioController">
             <div class="row">                
                 <div class="col-lg-12">
                     <center>         
@@ -13,16 +13,10 @@
                 </div>
             </div>
                 <div class="row">
-                    <center>                    
+                    <center ng-repeat="step in steps">                    
                     <div  class="col-md-4 portfolio-button">
-                        <a href="#"><img src="http://placehold.it/300x300"></a>                   
+                        <a href={{step.link}}><img src={{step.imgSrc}}></a>                   
                     </div>
-                    <div  class="col-md-4 portfolio-button">
-                        <a href="#"><img src="http://placehold.it/300x300"></a>  
-                    </div>
-                    <div  class="col-md-4 portfolio-button">
-                        <a href="#"><img src="http://placehold.it/300x300"></a>
-                    </div> 
                     </center>           
                 </div> 
         </div>       

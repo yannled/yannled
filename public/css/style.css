@@ -7,13 +7,17 @@
 body {
     margin-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
     position: relative;
+    background-color: #FF4719;
+    font-family: Andale Mono, monospace;
 }
 
 .header-image {
     display: block;
     width: 100%;
     text-align: center;
-    background: url('http://placehold.it/1900x500') no-repeat center center scroll;
+    /*background: url('http://placehold.it/1900x500') no-repeat center center scroll;*/
+    background: url(../img/stop-start.jpg) no-repeat center center scroll;
+    background-size: 1900px 500px;;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -31,13 +35,13 @@ body {
 }
 
 .headline h2 {
-    font-size: 77px;
+    font-size: 87px;
     background: #fff;
     background: rgba(255,255,255,0.9);
 }
 
 .featurette-divider {
-    margin: 80px 0;  
+    margin: 80px 0;
 }
 
 .featurette {
@@ -53,7 +57,7 @@ body {
 }
 
 .featurette-heading {
-    font-size: 50px;
+    font-size: 70px;
 }
 
 footer {
@@ -67,6 +71,10 @@ footer {
 
     .headline h2 {
         font-size: 63px;
+    }
+    
+    .headline h3 {
+        font-size: 45px;
     }
 
     .featurette-divider {
@@ -82,7 +90,7 @@ footer {
     }
 
     .featurette-heading {
-        font-size: 35px;
+        font-size: 55px;
     }
 }
 
@@ -93,6 +101,9 @@ footer {
 
     .headline h2 {
         font-size: 50px;
+    }
+    .headline h3 {
+        font-size: 35px;
     }
 
     .featurette-divider {
@@ -112,7 +123,7 @@ footer {
     }
 
     .featurette-heading {
-        font-size: 30px;
+        font-size: 50px;
     }
 }
 
@@ -126,7 +137,7 @@ footer {
     }
 
     .featurette-heading {
-        font-size: 25px;
+        font-size: 45px;
     }
 }
 
@@ -137,6 +148,10 @@ footer {
 
     .headline h2 {
         font-size: 32px;
+    }
+    
+    .headline h3 {
+        font-size: 25px;
     }
 
     .featurette-divider {
@@ -155,6 +170,10 @@ footer {
 
     .headline h2 {
         font-size: 30px;
+    }
+    
+    .headline h3 {
+        font-size: 25px;
     }
 }
 
@@ -180,35 +199,67 @@ footer {
 
 .portfolio-button {
   opacity: 1;
+  margin-bottom: 20px;
+}
+
+.services-icon {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.margin {
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
  
 .portfolio-button:hover {
   opacity: 0.75;
 }
-#about-background{
-    background-color: beige;
-    background-clip: content-box;
-    background-origin: border-box  
-}
-#services{
-    background-color: beige;
-    background-clip: content-box;
-    background-origin: border-box  
- }
-#contact{
-    background-color: beige;
-    background-clip: content-box;
-    background-origin: border-box  
-}
-#portfolio{
-    background-color: beige;
-    background-clip: content-box;
-    background-origin: border-box  
-}
 
-/*hr {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  border: 0;
+.img-about{
+    width: 200px;
+    height: 200px;
+}
+#about-background{
+    background-color: white;
+    background-clip: content-box;
+    background-origin: border-box;
+}
+#services-background{
+    background-color: #FF4719;
+    background-clip: content-box;
+    background-origin: border-box;
+    color: white; 
+ }
+ #services-icon-background{
+    background-color: white;
+    background-clip: content-box;
+    background-origin: border-box;  
+ }
+#contact-background{
+    background-color: #FF4719;
+    background-clip: content-box;
+    background-origin: border-box;
+    color: white; 
+}
+#portfolio-background{
+    background-color: #FF4719;
+    background-clip: content-box;
+    background-origin: border-box; 
+    color: white; 
+}
+p{
+    font-size: 20px;
+}
+hr {
+  margin-top: 0px;
+  margin-bottom: 0px;
   border-top: 0px solid #eee;
-}*/
+  background-color: blue;
+}
+.text-primary{
+    color:white;
+}
+.fa-inverse-primary{
+    color:#FF4719;
+}

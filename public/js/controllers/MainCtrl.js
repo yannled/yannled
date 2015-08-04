@@ -1,5 +1,6 @@
 angular.module('MainCtrl', []).controller('MainController', function($scope) {
-	$scope.tagline = 'Will Knock Your Socks Off';	
+	$scope.title = "YoUr Web";
+	$scope.tagline = 'Yann Lederrey';	
 	$scope.templates =
     [ { name: 'services.html', url: 'PartialViews/services.html'},
       { name: 'portfolio.html', url: 'PartialViews/portfolio.html'},
