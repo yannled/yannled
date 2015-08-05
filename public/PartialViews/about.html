@@ -14,12 +14,12 @@
             </div>
             <div class="col-md-offset-2 col-lg-8" ng-repeat="step in steps"> 
                 <div class="row"></div>
-                <img class="featurette-image img-circle img-responsive pull-right img-about" src={{step.imgSrc}} ng-if="$index%2 == 0">
-                <img class="featurette-image img-circle img-responsive pull-left img-about" src={{step.imgSrc}} ng-if="$index%2 != 0">
+                <a href={{step.link}}><img class="featurette-image img-circle img-responsive pull-right img-about" src={{step.imgSrc}} ng-if="$index%2 == 0"></a>
+                <a href={{step.link}}><img class="featurette-image img-circle img-responsive pull-left img-about" src={{step.imgSrc}} ng-if="$index%2 != 0"></a>
                  <h3>{{step.firstTitle}}
-                    <span class="text-muted">{{step.secondTitle}}</span>
+                    <span >{{step.secondTitle}}</span>
                 </h3>
-                <p>{{step.content}}</p><a href={{step.link}}>{{step.linkName}}</a>                              
+                <p class="text-muted">{{step.content}}</p>                              
            </div>           
       </div>
       <br>

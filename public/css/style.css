@@ -7,8 +7,8 @@
 body {
     margin-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
     position: relative;
-    background-color: #FF4719;
-    font-family: Andale Mono, monospace;
+    background-color: #ea5e00;
+    font-family: Verdana, Geneva, sans-serif;
 }
 
 .header-image {
@@ -16,7 +16,8 @@ body {
     width: 100%;
     text-align: center;
     /*background: url('http://placehold.it/1900x500') no-repeat center center scroll;*/
-    background: url(../img/stop-start.jpg) no-repeat center center scroll;
+    background: url(../img/flat-black-design.jpg) no-repeat center center;
+    background-attachment: fixed;
     background-size: 1900px 500px;;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -41,7 +42,7 @@ body {
 }
 
 .featurette-divider {
-    margin: 80px 0;
+    margin: 60px 0;
 }
 
 .featurette {
@@ -220,13 +221,18 @@ footer {
     width: 200px;
     height: 200px;
 }
+
+.img-about:hover{
+    opacity: 0.75;
+}
+
 #about-background{
     background-color: white;
     background-clip: content-box;
     background-origin: border-box;
 }
 #services-background{
-    background-color: #FF4719;
+    background-color: #ea5e00;
     background-clip: content-box;
     background-origin: border-box;
     color: white; 
@@ -237,13 +243,13 @@ footer {
     background-origin: border-box;  
  }
 #contact-background{
-    background-color: #FF4719;
+    background-color: #ea5e00;
     background-clip: content-box;
     background-origin: border-box;
     color: white; 
 }
 #portfolio-background{
-    background-color: #FF4719;
+    background-color: #ea5e00;
     background-clip: content-box;
     background-origin: border-box; 
     color: white; 
@@ -261,5 +267,8 @@ hr {
     color:white;
 }
 .fa-inverse-primary{
-    color:#FF4719;
+    color:#ea5e00;
+}
+.text-justified{
+    text-align: justify;
 }
