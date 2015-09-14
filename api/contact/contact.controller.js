@@ -10,6 +10,7 @@ var transporter = nodemailer.createTransport({
 exports.send = function(req,res){
   var htmlContent = '<p>Name: ' + req.body.name + '</p>' +
                     '<p>Email: ' + req.body.email + '</p>' +
+                    '<p>Phone: ' + req.body.phone + '</p>' +
                     '<p>Message: ' + req.body.message + '</p>';
   var mailOptions = {
     to: 'yannlederrey@gmail.com',                  // your email here
