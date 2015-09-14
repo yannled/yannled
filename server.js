@@ -5,9 +5,8 @@ var express = require('express');
 var app = express();
 var bodyParser = require('body-parser');
 var methodOverride = require('method-override');
-var nodemailer = require("nodemailer");
 // configuration
-
+process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
 //config files
 var db = require('./config/db');
 
@@ -37,35 +36,6 @@ app.use(express.static(__dirname + '/public'));
 // routes ==================================================
 require('./app/routes')(app); // configure our routes
 // start app ===============================================
-
-var smtpTransport = nodemailer.createTransport("SMTP",{
-service: "Gmail",
-auth: {
-user: "yannlederrey@gmail.com",
-pass: "Honda CBR 250"
-}
-});
-
-app.get('/send',function(req,res){
-	console.log('function was call');
-var mailOptions={
-from: 'yannlederrey@gmail.com',
-to : 'yann.lederrey@epfl.ch',
-subject : 'Bonjour',
-text : 'Comment allez vous '
-}
-console.log(mailOptions);
-smtpTransport.sendMail(mailOptions, function(error, response){
-if(error){
-console.log(error);
-res.end("error");
-}else{
-console.log("Message sent: " + response.message);
-res.end("sent");
-}
-});
-});
-
 // startup our app at http://localhost:8080
 app.listen(port);               
 

@@ -4,11 +4,21 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+@font-face {
+    font-family: "blackboard";
+    src: url('KGTenThousandReasons.ttf');
+}
+
 body {
     margin-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
     position: relative;
-    background-color: #ea5e00;
-    font-family: Verdana, Geneva, sans-serif;
+    /*background-color: #ea5e00;*/
+    /*background-color: #F26531;*/
+    /*background-color: #DFD9C2;*/
+    /*background-color: #231F20;*/
+    background: url(../img/blackboard.jpg);
+    /*font-family: Verdana, Geneva, sans-serif;*/
+    font-family: "Open Sans", sans-serif;
 }
 
 .header-image {
@@ -16,7 +26,7 @@ body {
     width: 100%;
     text-align: center;
     /*background: url('http://placehold.it/1900x500') no-repeat center center scroll;*/
-    background: url(../img/flat-black-design.jpg) no-repeat center center;
+    background: url(../img/blackboard.jpg) no-repeat center center;
     background-attachment: fixed;
     background-size: 1900px 500px;;
     -webkit-background-size: cover;
@@ -31,14 +41,16 @@ body {
 
 .headline h1 {
     font-size: 130px;
-    background: #fff;
-    background: rgba(255,255,255,0.9);
+    font-family: "blackboard";
+    /*background: #DFD9C2;*/
+    color: #DFD9C2;
 }
 
 .headline h2 {
     font-size: 87px;
-    background: #fff;
-    background: rgba(255,255,255,0.9);
+    font-family: "blackboard";
+    /*background: #DFD9C2;*/
+    color: #DFD9C2;
 }
 
 .featurette-divider {
@@ -222,37 +234,60 @@ footer {
     height: 200px;
 }
 
+.img-portfolio{
+    width: 300px;
+    height: 300px;
+}
+
 .img-about:hover{
     opacity: 0.75;
 }
 
 #about-background{
-    background-color: white;
     background-clip: content-box;
     background-origin: border-box;
+    color: #F26531;
+}
+.portfolio-content{
+    color: #DFD9C2;
 }
 #services-background{
-    background-color: #ea5e00;
+    background-color: #DFD9C2;
     background-clip: content-box;
     background-origin: border-box;
-    color: white; 
+    color: #231F20;
  }
  #services-icon-background{
-    background-color: white;
-    background-clip: content-box;
-    background-origin: border-box;  
- }
-#contact-background{
-    background-color: #ea5e00;
     background-clip: content-box;
     background-origin: border-box;
-    color: white; 
+    color:  #DFD9C2; 
+ }
+ 
+ .service-bouton{
+     background-color: #F26531;
+     color: #231F20;
+     border: 30px;
+     border-radius: 5px;
+     font-family: "Open Sans", sans-serif;       
+ }
+a:link {color: #231F20;}
+a:visited {color: #231F20;}
+a:hover {color: #DFD9C2;}
+a:active {color: #DFD9C2;}
+
+ .service-bouton:hover {
+  opacity: 0.75;
+}
+#contact-background{
+    background-clip: content-box;
+    background-origin: border-box;
+    color: #F26531; 
 }
 #portfolio-background{
-    background-color: #ea5e00;
+    background-color: #DFD9C2;
     background-clip: content-box;
     background-origin: border-box; 
-    color: white; 
+    color: #231F20; 
 }
 p{
     font-size: 20px;
@@ -264,11 +299,18 @@ hr {
   background-color: blue;
 }
 .text-primary{
-    color:white;
+    color:#F26531;
 }
 .fa-inverse-primary{
-    color:#ea5e00;
+    color:#231F20;
+}
+.fa-inverse{
+    color:black;
 }
 .text-justified{
     text-align: justify;
+}
+#contactform{
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
 }
