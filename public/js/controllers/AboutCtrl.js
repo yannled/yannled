@@ -6,8 +6,7 @@ angular.module('AboutCtrl', []).controller('AboutController', function($scope) {
 		  secondTitle:'Ecole Polytechnique Fédérale de Lausanne, EPFL',
 		  content:"Apprentissage effectué au sein du service de l'Enacit2 à l'EPFL, un apprentissage général en informatique m'ayant permis de toucher à une grande partie du métier.", imgSrc:'../../img/EPFL.jpg',
 		  linkName:'Enacit2',
-		  link:'http://enacit2.epfl.ch/',},
-		  
+		  link:'http://enacit2.epfl.ch/',},		  
 		  
 	  { firstTitle: "Cours d'apprentissage",
 		  secondTitle:'Ecole Professionel de Lausanne, EPSIC',
