@@ -16,15 +16,15 @@ angular.module('AboutCtrl', []).controller('AboutController', function($scope) {
 		  linkName:'EPSIC',
 		  link:'http://www.epsic.ch/', },
 		  
-	  { firstTitle: 'Premiers Sites Internet',
-		  secondTitle:"",
-		  content:"Premier site web pour un client, en partenariat avec Roxanne Borloz, Graphiste.",
-		  imgSrc:'../../img/roxanne.png',
-		  linkName:'Roxanne Borloz, Graphiste ',
-		  link:'http://www.roxanne-borloz.ch/',},
-		  
-	  { firstTitle: 'Obtention De mon CFC et de ma Maturité',
-		  secondTitle:"",
-		  content:"",
-		  imgSrc:'http://placehold.it/200x200', } ];	
+	  // { firstTitle: "Premiers Sites Internet",
+		//   secondTitle:"",
+		//   content:"Premier site web pour un client, en partenariat avec Roxanne Borloz, Graphiste.",
+		//   imgSrc:'../../img/roxanne.png',
+		//   linkName:'Roxanne Borloz, Graphiste ',
+		//   link:'http://www.roxanne-borloz.ch/',},
+		//   
+	  // { firstTitle: 'Obtention De mon CFC et de ma Maturité',
+		//   secondTitle:"",
+		//   content:"",
+		//   imgSrc:'http://placehold.it/200x200', } ];	
 });
