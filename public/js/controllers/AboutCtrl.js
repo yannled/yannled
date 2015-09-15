@@ -16,7 +16,6 @@ angular.module('AboutCtrl', []).controller('AboutController', function($scope) {
 		  linkName:'EPSIC',
 		  link:'http://www.epsic.ch/', },
 		  
-		  
 	  { firstTitle: 'Premiers Sites Internet',
 		  secondTitle:"",
 		  content:"Premier site web pour un client, en partenariat avec Roxanne Borloz, Graphiste.",
