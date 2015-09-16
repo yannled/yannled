@@ -8,9 +8,9 @@ angular.module('AboutCtrl', []).controller('AboutController', function($scope) {
 		  linkName:'Enacit2',
 		  link:'http://enacit2.epfl.ch/',},		  
 		  
-	  { firstTitle: "Cours d'apprentissage",
+	  { firstTitle: "Cours",
 		  secondTitle:'Ecole Professionel de Lausanne, EPSIC',
-		  content:"Cours de maturité professionel et d'informatique suivis à l'Epsic.",
+		  content:"Cours de maturité professionel et d'informatique suivis à l'Epsic pendant la période d'apprentissage.",
 		  imgSrc:'../../img/epsic.png',
 		  linkName:'EPSIC',
 		  link:'http://www.epsic.ch/', },
