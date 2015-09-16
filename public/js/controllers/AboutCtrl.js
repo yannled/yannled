@@ -24,6 +24,7 @@ angular.module('AboutCtrl', []).controller('AboutController', function($scope) {
 		  
 	  { firstTitle: 'Obtention De mon CFC et de ma Maturité',
 		  secondTitle:"",
-		  content:"",
-		  imgSrc:'http://placehold.it/200x200', } ];	
+		  content:"Début des création de site internet pour des clients à mon compte.",
+		  imgSrc:'../../img/check.png', } ];	
 });
+// 'http://placehold.it/200x200'
