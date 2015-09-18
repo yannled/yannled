@@ -22,9 +22,9 @@ angular.module('AboutCtrl', []).controller('AboutController', function($scope) {
 		  linkName:'Roxanne Borloz, Graphiste ',
 		  link:'http://www.roxanne-borloz.ch/',},
 		  
-	  { firstTitle: 'Obtention De mon CFC et de ma Maturité',
+	  { firstTitle: 'Obtention de mon CFC et de ma Maturité',
 		  secondTitle:"",
-		  content:"Début des création de site internet pour des clients à mon compte.",
+		  content:"Début des créations de sites internets pour des clients à mon compte.",
 		  imgSrc:'../../img/check.png', } ];	
 });
 // 'http://placehold.it/200x200'
