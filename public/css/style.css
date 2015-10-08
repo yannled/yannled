@@ -9,6 +9,11 @@
     src: url('KGTenThousandReasons.ttf');
 }
 
+@font-face {
+    font-family: "whiteboard";
+    src: url('HandOfSean.ttf');
+}
+
 body {
     margin-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
     position: relative;
@@ -266,7 +271,8 @@ footer {
  .service-bouton{
      background-color: #F26531;
      color: #231F20;
-     border: 30px;
+     border: 10px;
+     padding:5px;
      border-radius: 5px;
      font-family: "Open Sans", sans-serif;       
  }
@@ -314,3 +320,11 @@ hr {
     font-family: "Open Sans", sans-serif;
     font-size: 20px;
 }
+
+ #whiteboard-font{
+     font-family: "whiteboard";
+ }
+ 
+  #blackboard-font{
+     font-family: "blackboard";
+ }
