@@ -14,16 +14,16 @@
     src: url('HandOfSean.ttf');
 }
 
+@font-face {
+    font-family: "KeepCalm";
+    src: url('KeepCalm.ttf');
+}
+
 body {
     margin-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
     position: relative;
-    /*background-color: #ea5e00;*/
-    /*background-color: #F26531;*/
-    /*background-color: #DFD9C2;*/
-    /*background-color: #231F20;*/
-    background: url(../img/blackboard.jpg);
-    /*font-family: Verdana, Geneva, sans-serif;*/
     font-family: "Open Sans", sans-serif;
+    background: url(../img/blackboard.jpg);
 }
 
 .header-image {
@@ -46,16 +46,16 @@ body {
 
 .headline h1 {
     font-size: 130px;
-    font-family: "blackboard";
+    font-family: "KeepCalm";
     /*background: #DFD9C2;*/
-    color: #DFD9C2;
+    color: White;
 }
 
 .headline h2 {
     font-size: 87px;
-    font-family: "blackboard";
+    font-family: "KeepCalm";
     /*background: #DFD9C2;*/
-    color: #DFD9C2;
+    color: White;
 }
 
 .featurette-divider {
@@ -251,26 +251,41 @@ footer {
 #about-background{
     background-clip: content-box;
     background-origin: border-box;
-    color: #F26531;
+    background-color: white;
+    color: black;
 }
 .portfolio-content{
-    color: #DFD9C2;
+    color: black;
 }
-#services-background{
-    background-color: #DFD9C2;
+#services-background-1{
+    background-color: #FF6600;
     background-clip: content-box;
     background-origin: border-box;
-    color: #231F20;
+    color: black;
+ }
+ 
+ #services-background-2{
+    background-color: white;
+    background-clip: content-box;
+    background-origin: border-box;
+    color: black;
  }
  #services-icon-background{
     background-clip: content-box;
     background-origin: border-box;
-    color:  #DFD9C2; 
+    background: url(../img/blackboard.jpg) no-repeat center center;
+    background-attachment: fixed;
+    background-size: 1900px 500px;;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    color:  white; 
  }
  
  .service-bouton{
-     background-color: #F26531;
-     color: #231F20;
+     background-color: #FF6600;
+     color: black;
      border: 10px;
      padding:5px;
      border-radius: 5px;
@@ -278,22 +293,31 @@ footer {
  }
 a:link {color: #231F20;}
 a:visited {color: #231F20;}
-a:hover {color: #DFD9C2;}
-a:active {color: #DFD9C2;}
+a:hover {color: white;}
+a:active {color: white;}
 
  .service-bouton:hover {
   opacity: 0.75;
 }
-#contact-background{
-    background-clip: content-box;
-    background-origin: border-box;
-    color: #F26531; 
+#contact-background{    
+    background: url(../img/blackboard.jpg) no-repeat center center;
+    background-attachment: fixed;
+    background-size: 1900px 500px;;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    color: #FF6600; 
 }
+#Title-contact-background{
+    color: white; 
+}
+
 #portfolio-background{
-    background-color: #DFD9C2;
+    background-color: #FF6600;
     background-clip: content-box;
     background-origin: border-box; 
-    color: #231F20; 
+    color: black; 
 }
 p{
     font-size: 20px;
@@ -305,10 +329,10 @@ hr {
   background-color: blue;
 }
 .text-primary{
-    color:#F26531;
+    color: #FF6600;
 }
 .fa-inverse-primary{
-    color:#231F20;
+    color: black;
 }
 .fa-inverse{
     color:black;
@@ -322,9 +346,35 @@ hr {
 }
 
  #whiteboard-font{
-     font-family: "whiteboard";
+     font-family: "KeepCalm";
  }
  
   #blackboard-font{
-     font-family: "blackboard";
+     font-family: "KeepCalm";
+ }
+ 
+ #bluehr{
+    border: 0;
+    height: 1px;
+    background: #FF6600;
+    background-image: linear-gradient(to right, #ccc, #FF6600, #ccc);
+}
+.HeadButton{
+     color: black;
+     width: 30px;
+     height: 20px;
+     border: 1px;
+     padding:1px;
+     border-radius: 1px;
+     font-family: "Open Sans", sans-serif;       
+ }
+ 
+ #VeButton{
+     background-color: rgb(39, 150, 3);
+ }
+ #BlButton{
+     background-color: rgb(0, 159, 212);
+ }
+ #OrButton{
+     background-color: #FF6600;
  }

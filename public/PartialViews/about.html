@@ -1,6 +1,6 @@
        
 <div id="about-background">
-    <hr class="featurette-divider" id="about">
+    <hr id="about">
     <!--<div id="about">-->
     <div class="container">
         <!-- Fourth Featurette About-->
@@ -10,20 +10,21 @@
                     <h2 class="featurette-heading" id="blackboard-font">A propos de moi<br>
                     </h2>
                     <br>
-                    </center>                              
+                    </center>                             
             </div>
             <div class="col-md-offset-2 col-lg-8" ng-repeat="step in steps"> 
                 <div class="row"></div>
-                <a href={{step.link}}><img class="featurette-image img-circle img-responsive pull-right img-about" src={{step.imgSrc}} ng-if="$index%2 == 0"></a>
-                <a href={{step.link}}><img class="featurette-image img-circle img-responsive pull-left img-about" src={{step.imgSrc}} ng-if="$index%2 != 0"></a>
+                <a href={{step.link}}><img class="featurette-image  img-responsive pull-right img-about" src={{step.imgSrc}} ng-if="$index%2 == 0"></a>               
+                <a href={{step.link}}><img class="featurette-image  img-responsive pull-left img-about" src={{step.imgSrc}} ng-if="$index%2 != 0"></a>
                  <h3>{{step.firstTitle}}
                     <span >{{step.secondTitle}}</span>
                 </h3>
-                <p class="portfolio-content">{{step.content}}</p>                              
+                <p class="portfolio-content">{{step.content}}</p>
+                <hr id="bluehr">
+                <div class="row margin"></div>                             
            </div>
          <center><h1><button type="button" class="service-bouton" id="blackboard-font"><a href="../img/CV.pdf" target="_blank">curriculum vitae</a></button></center></h1>             
       </div>
-      <br>
     </div>
    </div>
 <!--</div>-->
