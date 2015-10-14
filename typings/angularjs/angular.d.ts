@@ -4,8 +4,6 @@
 // Definitions: https://github.com/borisyankov/DefinitelyTyped
 
 
-/// <reference path="../jquery/jquery.d.ts" />
-
 declare var angular: angular.IAngularStatic;
 
 // Support for painless dependency injection
