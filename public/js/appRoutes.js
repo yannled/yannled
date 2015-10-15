@@ -22,13 +22,10 @@ angular.module('appRoutes', []).config(['$routeProvider', '$locationProvider', f
         templateUrl: 'views/home.html',
         controller: 'MainController'
       }).
-      when('/error404',{
-        templateUrl: 'views/error404.html',
-        controller: 'MainController'
-      }).
-
-      otherwise({
-        redirectTo: '/error404'
+    otherwise({
+        redirectTo: function() {
+        window.location = "404-pacman-master/404.html";
+    }
       });
 
 	$locationProvider.html5Mode(true);

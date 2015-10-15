@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>404 - :(</title>
+    
+    <style type="text/css">
+      @font-face {
+	    font-family: 'BDCartoonShoutRegular';
+        src: url('BD_Cartoon_Shout-webfont.ttf') format('truetype');
+	    font-weight: normal;
+	    font-style: normal;
+      }
+      @font-face {
+      font-family: "KeepCalm";
+      src: url('KeepCalm.ttf');
+      }
+
+      #pacman {
+        height:450px;
+        width:442px;
+        /*margin:20px auto;*/
+      }
+      #shim { 
+        font-family: BDCartoonShoutRegular; 
+        position:absolute;
+        visibility:hidden
+      }
+      .title
+      {
+        color: white;
+        font-family: KeepCalm;
+      }
+      .sad
+      {
+        color: #e74c3c;
+        text-shadow: 1px 1px black;
+      }
+      .happy
+      {
+        color: #69ee69;
+        text-shadow: 1px 1px black;
+      }
+      .secundary
+      {
+          font-size: 28px;
+      }
+      h1 { font-family: BDCartoonShoutRegular; text-align:center; }
+      body { width:442px; margin:0px auto; font-family:sans-serif; }
+      a { text-decoration:none; }
+      button{ background-color: #FF6600;
+        border: 0px;
+        border-radius: 5px;
+        }
+    </style>
+
+</head>
+
+  <body style="background-color: black";>
+  
+
+
+  <h1 class="title secundary">404 Page not found</h1>
+  <h1 class="title secundary" >Vous pouvez jouer à PacMan en attendant !</h1>
+  <center>
+  <button class="title secundary"onclick="window.location ='/'">Retourner au site web</button>
+  </center>
+  <div id="pacman"></div>
+  <script src="pacman.js"></script>
+  <script src="modernizr-1.5.min.js"></script>
+
+  <script>
+
+    var el = document.getElementById("pacman");
+
+    if (Modernizr.canvas && Modernizr.localstorage && 
+        Modernizr.audio && (Modernizr.audio.ogg || Modernizr.audio.mp3)) {
+      window.setTimeout(function () { PACMAN.init(el, "./"); }, 0);
+    } else { 
+      el.innerHTML = "Sorry, needs a decent browser<br /><small>" + 
+        "(firefox 3.6+, Chrome 4+, Opera 10+ and Safari 4+)</small>";
+    }
+  </script>
+
+</body>
+</html>

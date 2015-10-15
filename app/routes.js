@@ -9,9 +9,4 @@ module.exports = function(app) {
 	app.get('*', function(req, res) {
 		res.sendfile('./public/index.html');
 	});
-
-	app.get('/error404', function(req, res) {
-		res.sendfile('./public/views/error404.html');
-	});
-	
 };
