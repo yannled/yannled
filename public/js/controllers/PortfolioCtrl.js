@@ -1,6 +1,6 @@
 angular.module('PortfolioCtrl', []).controller('PortfolioController', function($scope) {
 	$scope.steps =
-    [ { imgSrc:'../../img/noway.png' ,link:'http://yannlederrey.wix.com/no-way', },      
+    [ { imgSrc:'../../img/noway-aimant.png' ,link:'http://yannlederrey.wix.com/no-way', },      
 	  { imgSrc:'../../img/Logo_Championnats_Suisses.jpg',link:'http://echallens2016.ch/', },
 	];
 	$scope.steps2 =
