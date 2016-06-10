@@ -242,6 +242,8 @@ footer {
 .img-portfolio{
     width: 300px;
     height: auto;
+    margin-top: 20px;
+    vertical-align: middle;
 }
 
 .img-about:hover{
