@@ -3,6 +3,9 @@ angular.module('PortfolioCtrl', []).controller('PortfolioController', function($
     [ { imgSrc:'../../img/noway.png' ,link:'http://yannlederrey.wix.com/no-way', },
       { imgSrc:'../../img/sitevente.png',link:'http://yannlederreytest.ch/',},
 	  { imgSrc:'../../img/Logo_Championnats_Suisses.jpg',link:'http://echallens2016.ch/', },
-	  { imgSrc:'../../img/Chabloz.PNG',link:'http://roxannetest.tk/chabloz', },
+	];
+	$scope.steps2 =
+    [
+	 { imgSrc:'../../img/Chabloz.PNG',link:'http://roxannetest.tk/chabloz', },
 	];
 });
